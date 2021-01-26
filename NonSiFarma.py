@@ -125,8 +125,9 @@ def farma_lobo(data_analise=dt.date.today(),
 
     return df_lobo
 
-def soft_reis(path = r'C:\Users\Utilizador\Desktop\GHP\Histórico - Sell Out\Softreis',
-              data=None):
+def soft_reis(data=None):
+
+    path = r'C:\Users\Utilizador\Desktop\GHP\Histórico - Sell Out\Softreis'
 
     if data == None:
         data = dt.datetime.today() + relativedelta(days=-1)
@@ -219,3 +220,4 @@ def soft_reis(path = r'C:\Users\Utilizador\Desktop\GHP\Histórico - Sell Out\Sof
               .drop(columns='aux'))
 
     return the_df
+
